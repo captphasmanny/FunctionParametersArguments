@@ -65,7 +65,7 @@ int main()
 {
     doubleNum(getNum());
     return 0;
-}*/
+}
 
 int getInteger()
 {
@@ -84,5 +84,36 @@ void printInteger(int b)
 int main()
 {
     printInteger(getInteger());
+    return 0;
+}
+
+int addNums(int x, int y)
+{
+    return x+y;
+}
+
+int main()
+{
+    std::cout << addNums(9, 8) << '\n';
+}*/
+
+int getNumber()
+{
+    std::cout << "Give a number: ";
+    int b{};
+    std::cin >> b;
+    return b;
+}
+
+int doubleNumber(int x)
+{
+    std::cout << x << " * 2 = ";
+    return x*2;
+}
+
+int main()
+{
+    std::cout << doubleNumber(getNumber());
+    
     return 0;
 }
